@@ -1,0 +1,2 @@
+Output "bin\$(PlatformShortName)\$(Configuration)\"
+Intermediate "obj\$(PlatformShortName)\$(Configuration)\Box2D\"
