@@ -26,9 +26,7 @@ int Box2DRayTest(int argc, char** argv) {
 	int screenHeight = 450;
 
 	InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
-
 	SetTargetFPS(60);
-
 
 	//Setup Physics
 	B2_NOT_USED(argc);
@@ -53,7 +51,9 @@ int Box2DRayTest(int argc, char** argv) {
 	b2PolygonShape groundBox;
 
 	// The extents are the half-widths of the box.
-	groundBox.SetAsBox(50.0f, 10.0f);
+	float32 dGroundWidth = 50.0f;
+	float32 dGroundHeight = 10.0f;
+	groundBox.SetAsBox(dGroundWidth, dGroundHeight);
 
 	// Add the ground fixture to the ground body.
 	groundBody->CreateFixture(&groundBox, 0.0f);
@@ -66,7 +66,9 @@ int Box2DRayTest(int argc, char** argv) {
 
 	// Define another box shape for our dynamic body.
 	b2PolygonShape dynamicBox;
-	dynamicBox.SetAsBox(1.0f, 1.0f);
+	float32 dBoxWidth = 10.0f;
+	float32 dBoxHeight = 10.0f;
+	dynamicBox.SetAsBox(dBoxWidth, dBoxHeight);
 
 	// Define the dynamic body fixture.
 	b2FixtureDef fixtureDef;
@@ -88,6 +90,8 @@ int Box2DRayTest(int argc, char** argv) {
 	int32 velocityIterations = 6;
 	int32 positionIterations = 2;
 
+
+	body->SetSleepingAllowed(false);
 	// Main game loop
 	while (!WindowShouldClose())    // Detect window close button or ESC key
 	{
@@ -95,6 +99,10 @@ int Box2DRayTest(int argc, char** argv) {
 		//----------------------------------------------------------------------------------
 		// TODO: Update your variables here
 		//----------------------------------------------------------------------------------
+
+		if (IsKeyPressed(KEY_SPACE)) {
+			body->SetTransform(b2Vec2(screenWidth / 2.0f, 100.0f), 0);
+		}
 
 		// Instruct the world to perform a single step of simulation.
 		// It is generally best to keep the time step and iterations fixed.
@@ -112,10 +120,10 @@ int Box2DRayTest(int argc, char** argv) {
 
 		ClearBackground(RAYWHITE);
 
-		DrawRectangle(groundBody->GetPosition().x, groundBody->GetPosition().y, 50.0f, 10.0f, GREEN);
-		DrawRectangle(body->GetPosition().x, body->GetPosition().y, 1.0f*2, 1.0f, RED);
+		DrawRectangle(groundBody->GetPosition().x, groundBody->GetPosition().y, dGroundWidth*2, dGroundHeight*2, GREEN);
+		DrawRectangle(body->GetPosition().x, body->GetPosition().y, dBoxWidth*2, dBoxHeight*2, RED);
 
-		DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+		DrawText("Ayse what are you doing...", 190, 200, 20, LIGHTGRAY);
 
 		EndDrawing();
 		//----------------------------------------------------------------------------------
@@ -127,11 +135,11 @@ int Box2DRayTest(int argc, char** argv) {
 
 	return 0;
 }
-
-int main(int argc, char** argv)
-{
-	//return Box2DTest(argc, argv);
-	//return RayLibTest(argc, argv);
-	return Box2DRayTest(argc, argv);
-
-}
+//
+//int main(int argc, char** argv)
+//{
+//	return Box2DTest(argc, argv);
+//	return RayLibTest(argc, argv);
+//	return Box2DRayTest(argc, argv);
+//
+//}

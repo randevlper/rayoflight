@@ -13,13 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Nodes">
+      <UniqueIdentifier>{934195bb-7489-469c-9008-a5e4bbab1794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{1bc843ca-54a3-4748-87c9-859f04eef307}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\Nodes\Node.cpp">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HelloWorld.cpp">
+    <ClCompile Include="src\HelloWorld.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Systems\World.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Nodes\Node.h">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Context.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Systems\World.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
