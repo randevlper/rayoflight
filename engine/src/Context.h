@@ -13,6 +13,12 @@ public:
 
 	bool ShouldClose();
 
+	World* GetWorld();
+	b2World* GetPhysicsWorld();
+
+	float GetScreenWidth();
+	float GetScreenHeight();
+
 private:
 	Context();
 
@@ -25,5 +31,5 @@ private:
 	float32 _timeStep = 1.0f / 60.0f;
 	int32 _velocityIterations = 6;
 	int32 _positionIterations = 2;
-	World _world;
+	World* _world;
 };

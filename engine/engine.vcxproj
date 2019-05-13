@@ -157,13 +157,19 @@
     <ClCompile Include="src\Context.cpp" />
     <ClCompile Include="src\HelloWorld.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Nodes\Body.cpp" />
     <ClCompile Include="src\Nodes\Node.cpp" />
+    <ClCompile Include="src\Nodes\Node2D.cpp" />
     <ClCompile Include="src\Systems\World.cpp" />
+    <ClCompile Include="src\Utility\Box2D2Ray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Context.h" />
+    <ClInclude Include="src\Nodes\Body.h" />
     <ClInclude Include="src\Nodes\Node.h" />
+    <ClInclude Include="src\Nodes\Node2D.h" />
     <ClInclude Include="src\Systems\World.h" />
+    <ClInclude Include="src\Utility\Box2D2Ray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -19,6 +19,9 @@
     <Filter Include="Systems">
       <UniqueIdentifier>{1bc843ca-54a3-4748-87c9-859f04eef307}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{65fbb450-7442-4a33-82a6-cae67e46ecb1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nodes\Node.cpp">
@@ -36,6 +39,15 @@
     <ClCompile Include="src\Systems\World.cpp">
       <Filter>Systems</Filter>
     </ClCompile>
+    <ClCompile Include="src\Nodes\Node2D.cpp">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nodes\Body.cpp">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\Box2D2Ray.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Nodes\Node.h">
@@ -46,6 +58,15 @@
     </ClInclude>
     <ClInclude Include="src\Systems\World.h">
       <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nodes\Node2D.h">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nodes\Body.h">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Box2D2Ray.h">
+      <Filter>Utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -39,24 +39,26 @@ int Box2DRayTest(int argc, char** argv) {
 	b2World world(gravity);
 
 	// Define the ground body.
-	b2BodyDef groundBodyDef;
-	groundBodyDef.position.Set(screenWidth/2.0f, 0);
+	b2BodyDef * groundBodyDef = new b2BodyDef();
+	groundBodyDef->position.Set(screenWidth/2.0f, 0);
 
 	// Call the body factory which allocates memory for the ground body
 	// from a pool and creates the ground box shape (also from a pool).
 	// The body is also added to the world.
-	b2Body * groundBody = world.CreateBody(&groundBodyDef);
+	b2Body * groundBody = world.CreateBody(groundBodyDef);
 
 	// Define the ground box shape.
-	b2PolygonShape groundBox;
+	b2PolygonShape * groundBox = new b2PolygonShape();
 
 	// The extents are the half-widths of the box.
 	float32 dGroundWidth = 50.0f;
 	float32 dGroundHeight = 10.0f;
-	groundBox.SetAsBox(dGroundWidth, dGroundHeight);
+	groundBox->SetAsBox(dGroundWidth, dGroundHeight);
 
 	// Add the ground fixture to the ground body.
-	groundBody->CreateFixture(&groundBox, 0.0f);
+	groundBody->CreateFixture(groundBox, 0.0f);
+	delete groundBodyDef;
+	delete groundBox;
 
 	// Define the dynamic body. We set its position and call the body factory.
 	b2BodyDef bodyDef;
@@ -135,11 +137,9 @@ int Box2DRayTest(int argc, char** argv) {
 
 	return 0;
 }
-//
+
 //int main(int argc, char** argv)
 //{
-//	return Box2DTest(argc, argv);
-//	return RayLibTest(argc, argv);
 //	return Box2DRayTest(argc, argv);
 //
 //}
