@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
 	Body* test1 = new Body(context->GetPhysicsWorld(), bodyDef, fixtureDef);
 
 	bodyDef.position.Set(context->GetScreenWidth(), 0);
-	polyShape.SetAsBox(50.0f, 50.0f);
+	polyShape.SetAsBox(5.0f, 50.0f);
 	Body* test2 = new Body(context->GetPhysicsWorld(), bodyDef, fixtureDef);
 
 
