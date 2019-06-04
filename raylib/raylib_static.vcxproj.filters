@@ -27,49 +27,49 @@
     <CustomBuild Include="C:\dev\raylib\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\context.obj">
+    <Object Include="glfw_objlib.dir\Debug\context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\init.obj">
+    <Object Include="glfw_objlib.dir\Debug\egl_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\input.obj">
+    <Object Include="glfw_objlib.dir\Debug\init.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\monitor.obj">
+    <Object Include="glfw_objlib.dir\Debug\input.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\vulkan.obj">
+    <Object Include="glfw_objlib.dir\Debug\monitor.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\window.obj">
+    <Object Include="glfw_objlib.dir\Debug\osmesa_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_init.obj">
+    <Object Include="glfw_objlib.dir\Debug\vulkan.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_joystick.obj">
+    <Object Include="glfw_objlib.dir\Debug\wgl_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_monitor.obj">
+    <Object Include="glfw_objlib.dir\Debug\win32_init.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_time.obj">
+    <Object Include="glfw_objlib.dir\Debug\win32_joystick.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_thread.obj">
+    <Object Include="glfw_objlib.dir\Debug\win32_monitor.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_window.obj">
+    <Object Include="glfw_objlib.dir\Debug\win32_thread.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\wgl_context.obj">
+    <Object Include="glfw_objlib.dir\Debug\win32_time.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\egl_context.obj">
+    <Object Include="glfw_objlib.dir\Debug\win32_window.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\osmesa_context.obj">
+    <Object Include="glfw_objlib.dir\Debug\window.obj">
       <Filter>Object Libraries</Filter>
     </Object>
   </ItemGroup>

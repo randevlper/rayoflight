@@ -56,19 +56,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\raylib\raylib-build\src\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)bin\$(Configuration)\$(PlatformTarget)</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">raylib_static.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">raylib_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\raylib\raylib-build\src\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)bin\$(Configuration)\$(PlatformTarget)</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">raylib_static.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">raylib_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\raylib\raylib-build\src\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(ProjectDir)bin\$(Configuration)\$(PlatformTarget)</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">raylib_static.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">raylib_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\raylib\raylib-build\src\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(ProjectDir)bin\$(Configuration)\$(PlatformTarget)</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">raylib_static.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">raylib_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
@@ -272,21 +272,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\dev\raylib\src\text.c" />
     <ClCompile Include="C:\dev\raylib\src\textures.c" />
     <ClCompile Include="C:\dev\raylib\src\utils.c" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\context.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\init.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\input.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\monitor.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\vulkan.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\window.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_init.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_joystick.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_monitor.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_time.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_thread.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\win32_window.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\wgl_context.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\egl_context.obj" />
-    <Object Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_objlib.dir\$(Configuration)\osmesa_context.obj" />
+    <Object Include="glfw_objlib.dir\Debug\context.obj" />
+    <Object Include="glfw_objlib.dir\Debug\init.obj" />
+    <Object Include="glfw_objlib.dir\Debug\input.obj" />
+    <Object Include="glfw_objlib.dir\Debug\monitor.obj" />
+    <Object Include="glfw_objlib.dir\Debug\vulkan.obj" />
+    <Object Include="glfw_objlib.dir\Debug\window.obj" />
+    <Object Include="glfw_objlib.dir\Debug\win32_init.obj" />
+    <Object Include="glfw_objlib.dir\Debug\win32_joystick.obj" />
+    <Object Include="glfw_objlib.dir\Debug\win32_monitor.obj" />
+    <Object Include="glfw_objlib.dir\Debug\win32_time.obj" />
+    <Object Include="glfw_objlib.dir\Debug\win32_thread.obj" />
+    <Object Include="glfw_objlib.dir\Debug\win32_window.obj" />
+    <Object Include="glfw_objlib.dir\Debug\wgl_context.obj" />
+    <Object Include="glfw_objlib.dir\Debug\egl_context.obj" />
+    <Object Include="glfw_objlib.dir\Debug\osmesa_context.obj" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\dev\raylib\raylib-build\ZERO_CHECK.vcxproj">
