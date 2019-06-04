@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\dev\raylib\src\core.c">
+    <ClCompile Include="src\core.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\models.c">
+    <ClCompile Include="src\models.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\raudio.c">
+    <ClCompile Include="src\raudio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\shapes.c">
+    <ClCompile Include="src\shapes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\text.c">
+    <ClCompile Include="src\text.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\textures.c">
+    <ClCompile Include="src\textures.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\utils.c">
+    <ClCompile Include="src\utils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -77,8 +77,5 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{0C31B9DE-2283-33CC-917C-6019DFD796E1}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="src\CMakeLists.txt" />
   </ItemGroup>
 </Project>
