@@ -24,49 +24,49 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Object Include="glfw_objlib.dir\Debug\context.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\egl_context.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\egl_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\init.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\init.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\input.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\input.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\monitor.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\monitor.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\osmesa_context.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\osmesa_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\vulkan.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\vulkan.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\wgl_context.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\wgl_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\win32_init.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_init.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\win32_joystick.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_joystick.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\win32_monitor.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_monitor.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\win32_thread.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_thread.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\win32_time.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_time.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\win32_window.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_window.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="glfw_objlib.dir\Debug\window.obj">
+    <Object Include="obj\glfw_objlib.dir\Debug\window.obj">
       <Filter>Object Libraries</Filter>
     </Object>
   </ItemGroup>

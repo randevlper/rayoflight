@@ -57,19 +57,19 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\external\glfw\src\$(Configuration)</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(TargetName).dir/$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj/$(TargetName).dir/$(Configuration)</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\external\glfw\src\$(Configuration)</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(TargetName).dir/$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj/$(TargetName).dir/$(Configuration)</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(ProjectDir)src\external\glfw\src\$(Configuration)</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(TargetName).dir/$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">obj/$(TargetName).dir/$(Configuration)</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(ProjectDir)src\external\glfw\src\$(Configuration)</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(TargetName).dir/$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">obj/$(TargetName).dir/$(Configuration)</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
   </PropertyGroup>
@@ -209,21 +209,21 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Object Include="glfw_objlib.dir\Debug\context.obj" />
-    <Object Include="glfw_objlib.dir\Debug\init.obj" />
-    <Object Include="glfw_objlib.dir\Debug\input.obj" />
-    <Object Include="glfw_objlib.dir\Debug\monitor.obj" />
-    <Object Include="glfw_objlib.dir\Debug\vulkan.obj" />
-    <Object Include="glfw_objlib.dir\Debug\window.obj" />
-    <Object Include="glfw_objlib.dir\Debug\win32_init.obj" />
-    <Object Include="glfw_objlib.dir\Debug\win32_joystick.obj" />
-    <Object Include="glfw_objlib.dir\Debug\win32_monitor.obj" />
-    <Object Include="glfw_objlib.dir\Debug\win32_time.obj" />
-    <Object Include="glfw_objlib.dir\Debug\win32_thread.obj" />
-    <Object Include="glfw_objlib.dir\Debug\win32_window.obj" />
-    <Object Include="glfw_objlib.dir\Debug\wgl_context.obj" />
-    <Object Include="glfw_objlib.dir\Debug\egl_context.obj" />
-    <Object Include="glfw_objlib.dir\Debug\osmesa_context.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\context.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\init.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\input.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\monitor.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\vulkan.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\window.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_init.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_joystick.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_monitor.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_time.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_thread.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\win32_window.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\wgl_context.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\egl_context.obj" />
+    <Object Include="obj\glfw_objlib.dir\Debug\osmesa_context.obj" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="glfw_objlib.vcxproj">

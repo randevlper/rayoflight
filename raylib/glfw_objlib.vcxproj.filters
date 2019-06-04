@@ -87,7 +87,4 @@
       <UniqueIdentifier>{0C31B9DE-2283-33CC-917C-6019DFD796E1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="src\external\glfw\src\CMakeLists.txt" />
-  </ItemGroup>
 </Project>
