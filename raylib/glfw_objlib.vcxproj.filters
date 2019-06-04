@@ -1,86 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\context.c">
+    <ClCompile Include="src\external\glfw\src\context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\init.c">
+    <ClCompile Include="src\external\glfw\src\egl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\input.c">
+    <ClCompile Include="src\external\glfw\src\init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\monitor.c">
+    <ClCompile Include="src\external\glfw\src\input.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\vulkan.c">
+    <ClCompile Include="src\external\glfw\src\monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\window.c">
+    <ClCompile Include="src\external\glfw\src\osmesa_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_init.c">
+    <ClCompile Include="src\external\glfw\src\vulkan.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_joystick.c">
+    <ClCompile Include="src\external\glfw\src\wgl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_monitor.c">
+    <ClCompile Include="src\external\glfw\src\win32_init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_time.c">
+    <ClCompile Include="src\external\glfw\src\win32_joystick.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_thread.c">
+    <ClCompile Include="src\external\glfw\src\win32_monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_window.c">
+    <ClCompile Include="src\external\glfw\src\win32_thread.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\wgl_context.c">
+    <ClCompile Include="src\external\glfw\src\win32_time.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\egl_context.c">
+    <ClCompile Include="src\external\glfw\src\win32_window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\osmesa_context.c">
+    <ClCompile Include="src\external\glfw\src\window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\internal.h">
+    <ClInclude Include="src\external\glfw\src\egl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\mappings.h">
+    <ClInclude Include="src\external\glfw\src\glfw_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_config.h">
+    <ClInclude Include="src\external\glfw\include\GLFW\glfw3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\include\GLFW\glfw3.h">
+    <ClInclude Include="src\external\glfw\include\GLFW\glfw3native.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\include\GLFW\glfw3native.h">
+    <ClInclude Include="src\external\glfw\src\internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\win32_platform.h">
+    <ClInclude Include="src\external\glfw\src\mappings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\win32_joystick.h">
+    <ClInclude Include="src\external\glfw\src\osmesa_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\wgl_context.h">
+    <ClInclude Include="src\external\glfw\src\wgl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\egl_context.h">
+    <ClInclude Include="src\external\glfw\src\win32_joystick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\osmesa_context.h">
+    <ClInclude Include="src\external\glfw\src\win32_platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="C:\dev\raylib\src\external\glfw\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
@@ -89,5 +86,8 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{0C31B9DE-2283-33CC-917C-6019DFD796E1}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\external\glfw\src\CMakeLists.txt" />
   </ItemGroup>
 </Project>

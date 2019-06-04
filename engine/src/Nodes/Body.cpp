@@ -61,7 +61,7 @@ void Body::Render()
 		}
 		b2Vec2 last = _body->GetWorldPoint(polygon->m_vertices[0]);
 		lines.push_back(Box2D2Ray::B2DtoVector2(last));
-		DrawPolyExLines(lines.data(), polygon->m_count + 1, RED);
+		DrawLineStrip(lines.data(), polygon->m_count + 1, RED);
 		//DrawRectangle(GetTransform().p.x, GetTransform().p.y, 10.0f, 10.0f, RED);
 
 		//About DrawPolyEx(), points are expected to be provided definning counter-clock-wise 

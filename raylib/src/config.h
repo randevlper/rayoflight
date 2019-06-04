@@ -28,10 +28,10 @@
 #define RAYLIB_VERSION  "2.5"
 
 // Edit to control what features Makefile'd raylib is compiled with
-#if defined(RAYLIB_CMAKE)
+//#if defined(RAYLIB_CMAKE)
     // Edit CMakeOptions.txt for CMake instead
-    #include "cmake/config.h"
-#else
+    //#include "cmake/config.h"
+//#else
 
 //------------------------------------------------------------------------------------
 // Module: core - Configuration Flags

@@ -24,9 +24,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\dev\raylib\src\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Object Include="glfw_objlib.dir\Debug\context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
@@ -80,5 +77,8 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{0C31B9DE-2283-33CC-917C-6019DFD796E1}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\CMakeLists.txt" />
   </ItemGroup>
 </Project>

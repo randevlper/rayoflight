@@ -56,26 +56,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">glfw_objlib.dir\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">glfw_objlib.dir\Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src\external\$(TargetName)\src\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(TargetName).dir/$(Configuration)</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">glfw_objlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">glfw_objlib.dir\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">glfw_objlib.dir\Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src\external\$(TargetName)\src\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(TargetName).dir/$(Configuration)</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">glfw_objlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">glfw_objlib.dir\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">glfw_objlib.dir\MinSizeRel\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(ProjectDir)src\external\$(TargetName)\src\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(TargetName).dir/$(Configuration)</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">glfw_objlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">glfw_objlib.dir\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">glfw_objlib.dir\RelWithDebInfo\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(ProjectDir)src\external\$(TargetName)\src\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(TargetName).dir/$(Configuration)</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">glfw_objlib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\dev\raylib\raylib-build;C:\dev\raylib\src\.;C:\dev\raylib\src\external\glfw\include;C:\dev\raylib\src\external\glfw\src;C:\dev\raylib\raylib-build\src\external\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src\.;$(ProjectDir)src\external\glfw\include;$(ProjectDir)src\external\glfw\src;$(ProjectDir)raylib-build\src\external\glfw\src;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -209,7 +209,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\dev\raylib\src\external\glfw\src\CMakeLists.txt">
+    <CustomBuild Include="src\external\glfw\src\CMakeLists.txt">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/dev/raylib/src/external/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/raylib -BC:/dev/raylib/raylib-build --check-stamp-file C:/dev/raylib/raylib-build/src/external/glfw/src/CMakeFiles/generate.stamp
@@ -265,39 +265,31 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\context.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\init.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\input.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\monitor.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\vulkan.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\window.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_init.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_joystick.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_monitor.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_time.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_thread.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\win32_window.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\wgl_context.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\egl_context.c" />
-    <ClCompile Include="C:\dev\raylib\src\external\glfw\src\osmesa_context.c" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\internal.h" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\mappings.h" />
-    <ClInclude Include="C:\dev\raylib\raylib-build\src\external\glfw\src\glfw_config.h" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\include\GLFW\glfw3.h" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\include\GLFW\glfw3native.h" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\win32_platform.h" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\win32_joystick.h" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\wgl_context.h" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\egl_context.h" />
-    <ClInclude Include="C:\dev\raylib\src\external\glfw\src\osmesa_context.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="C:\dev\raylib\raylib-build\ZERO_CHECK.vcxproj">
-      <Project>{0B804966-00D2-3ED8-B4F4-6E663C497BD4}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
+    <ClCompile Include="src\external\glfw\src\context.c" />
+    <ClCompile Include="src\external\glfw\src\init.c" />
+    <ClCompile Include="src\external\glfw\src\input.c" />
+    <ClCompile Include="src\external\glfw\src\monitor.c" />
+    <ClCompile Include="src\external\glfw\src\vulkan.c" />
+    <ClCompile Include="src\external\glfw\src\window.c" />
+    <ClCompile Include="src\external\glfw\src\win32_init.c" />
+    <ClCompile Include="src\external\glfw\src\win32_joystick.c" />
+    <ClCompile Include="src\external\glfw\src\win32_monitor.c" />
+    <ClCompile Include="src\external\glfw\src\win32_time.c" />
+    <ClCompile Include="src\external\glfw\src\win32_thread.c" />
+    <ClCompile Include="src\external\glfw\src\win32_window.c" />
+    <ClCompile Include="src\external\glfw\src\wgl_context.c" />
+    <ClCompile Include="src\external\glfw\src\egl_context.c" />
+    <ClCompile Include="src\external\glfw\src\osmesa_context.c" />
+    <ClInclude Include="src\external\glfw\src\internal.h" />
+    <ClInclude Include="src\external\glfw\src\mappings.h" />
+    <ClInclude Include="src\external\glfw\src\glfw_config.h" />
+    <ClInclude Include="src\external\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="src\external\glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="src\external\glfw\src\win32_platform.h" />
+    <ClInclude Include="src\external\glfw\src\win32_joystick.h" />
+    <ClInclude Include="src\external\glfw\src\wgl_context.h" />
+    <ClInclude Include="src\external\glfw\src\egl_context.h" />
+    <ClInclude Include="src\external\glfw\src\osmesa_context.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
